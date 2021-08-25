@@ -35,7 +35,7 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
         var dateData, diff;
         endDate = Date.parse($.isPlainObject(_this.options.date) ? _this.options.date : new Date(_this.options.date));
         diff = (endDate - Date.parse(new Date)) / 1000;
-        if (diff <= 10) {
+        if (diff <= 0) {
           diff = 0;
           if (_this.interval) {
             _this.stop();
